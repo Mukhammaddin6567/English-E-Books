@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_bottom_sheet_dialog"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/line"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_bottom_sheet_dialog_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line">
+
+        <TextView
+            android:id="@+id/buttonUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/text_update"
+            android:textColor="@color/color_dark_blue"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_update" />
+
+        <TextView
+            android:id="@+id/buttonShare"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/text_share"
+            android:textColor="@color/color_dark_blue"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/buttonRate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/text_rate"
+            android:textColor="@color/color_dark_blue"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_rate" />
+
+        <!--<TextView
+            android:id="@+id/buttonUiMode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/text_dark_mode"
+            android:textColor="@color/color_dark_blue"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_ui_mode" />-->
+
+        <TextView
+            android:id="@+id/buttonAbout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/text_about"
+            android:textColor="@color/color_dark_blue"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_info" />
+
+        <TextView
+            android:id="@+id/buttonQuit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/text_quit"
+            android:textColor="@color/color_dark_blue"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_quit" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

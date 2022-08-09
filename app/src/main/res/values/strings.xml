@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">English E-books</string>
+    <string name="text_my_books">My Books</string>
+    <string name="text_search">Search</string>
+    <string name="book_reader">Book reader</string>
+    <string name="text_intro_title1">Convenient use</string>
+    <string name="text_intro_description1">Everything for comfortable reading of your favourite books.</string>
+    <string name="text_intro_title2">Offline reading</string>
+    <string name="text_intro_description2">Different formats for reading to books.</string>
+    <string name="text_intro_title3">Search</string>
+    <string name="text_intro_description3">Easy search by all titles and authors.</string>
+    <string name="text_intro_next">Next</string>
+    <string name="text_intro_start">Start</string>
+    <string name="text_splash_version">Version %1$s</string>
+    <string name="text_search_hint">Search Books or Author…</string>
+    <string name="text_summary">Summary</string>
+    <string name="text_read_book">Read Book</string>
+    <string name="text_error_permission_denied">Permission denied</string>
+    <string name="text_book_pages">"%1$d of %2$d"</string>
+    <string name="text_quit">Quit app</string>
+    <string name="text_rate">Rate app</string>
+    <string name="text_share">Share app</string>
+    <string name="text_update">Check for update books</string>
+    <string name="text_about">About app</string>
+    <string name="text_about_title">About English E-books</string>
+    <string name="text_about_full">In classic English literature, the language is so powerful that
+        you’ll remember words, phrases and grammar long after you’ve finished the book.
+        \n\nPlus, you’ll learn stories which are very important to culture in the
+        English-speaking world.\n\nIn this app, you’ll discover 20 classic English books that
+        are perfect for intermediate learners, now available in e-book format.</string>
+    <string name="text_share_title">Share</string>
+    <string name="text_share_details">Let me recommend you this application: https://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="text_rate_uri">market://details?id=%1$s</string>
+    <string name="text_error_placeholder_list">Please check internet connection and try again</string>
+    <string name="text_error_placeholder_search">Books or Author not found</string>
+    <string name="text_ok">OK</string>
+    <string name="text_light_mode">Light mode</string>
+    <string name="text_dark_mode">Dark mode</string>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:layout_editor_absoluteY="195dp"
+        tools:src="@drawable/intro1" />
+
+    <TextView
+        android:id="@+id/textIntroTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textColor="@color/color_dark_blue"
+        android:textSize="16sp"
+        tools:text="Title One" />
+
+    <TextView
+        android:id="@+id/textIntroDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:textAlignment="center"
+        android:textColor="@color/color_dark_blue"
+        tools:maxLines="3"
+        tools:text="@tools:sample/lorem/random" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

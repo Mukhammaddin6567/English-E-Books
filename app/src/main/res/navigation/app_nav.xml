@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav.xml"
+    app:startDestination="@id/splashScreen">
+    <fragment
+        android:id="@+id/booksScreen"
+        android:name="uz.gita.bookapp.presentation.ui.screen.BooksScreen"
+        android:label="screen_books"
+        tools:layout="@layout/screen_books">
+        <action
+            android:id="@+id/action_booksScreen_to_detailsScreen"
+            app:destination="@id/detailsScreen"
+            app:enterAnim="@anim/anim_from_right"
+            app:exitAnim="@anim/anim_to_left"
+            app:popEnterAnim="@anim/anim_from_left"
+            app:popExitAnim="@anim/anim_to_right" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_splash"
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.bookapp.presentation.ui.screen.SplashScreen"
+        android:label="SplashScreen" >
+        <action
+            android:id="@+id/action_splashScreen_to_booksScreen"
+            app:destination="@id/booksScreen"
+            app:enterAnim="@anim/anim_from_right_splash"
+            app:exitAnim="@anim/anim_to_left_splash"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreen_to_introScreen"
+            app:destination="@id/introScreen"
+            app:enterAnim="@anim/anim_from_right_splash"
+            app:exitAnim="@anim/anim_to_left_splash"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_intro"
+        android:id="@+id/introScreen"
+        android:name="uz.gita.bookapp.presentation.ui.screen.IntroScreen"
+        android:label="IntroScreen" >
+        <action
+            android:id="@+id/action_introScreen_to_bookScreen"
+            app:destination="@id/booksScreen"
+            app:enterAnim="@anim/anim_from_right"
+            app:exitAnim="@anim/anim_to_left"
+            app:popUpTo="@id/introScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_details"
+        android:id="@+id/detailsScreen"
+        android:name="uz.gita.bookapp.presentation.ui.screen.DetailsScreen"
+        android:label="DetailsScreen" >
+        <argument
+            android:name="bookId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detailsScreen_to_readScreen"
+            app:destination="@id/readScreen"
+            app:enterAnim="@anim/anim_from_right"
+            app:exitAnim="@anim/anim_to_left"
+            app:popEnterAnim="@anim/anim_from_left"
+            app:popExitAnim="@anim/anim_to_right" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_read"
+        android:id="@+id/readScreen"
+        android:name="uz.gita.bookapp.presentation.ui.screen.ReadScreen"
+        android:label="ReadScreen" >
+        <argument
+            android:name="bookId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:background="?selectableItemBackgroundBorderless"
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/poppins_medium"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/color_dark_blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/buttonBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonBack"
+        app:layout_constraintTop_toTopOf="@id/buttonBack"
+        tools:text="@tools:sample/lorem/random" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/progressBook"
+        app:layout_constraintTop_toBottomOf="@id/buttonBack">
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdfView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/progressBook"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:progressTint="@color/color_progress"
+        app:layout_constraintBottom_toTopOf="@id/containerBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/swipeRefreshLayout"
+        tools:progress="0" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/containerBottom"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textBookPages"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/color_book_pages"
+            android:textSize="12sp"
+            tools:text="67 of 278" />
+
+        <!--<androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/buttonShare"
+            android:layout_width="wrap_content"
+            android:padding="2dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_share"
+            android:layout_height="wrap_content"/>-->
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
